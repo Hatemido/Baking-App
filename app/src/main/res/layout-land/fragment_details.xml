@@ -1,0 +1,51 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="ahmed.example.com.bakingapp.Steps.DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/thumbnail_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/step_instruction"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_rectangle"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_next" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_previous" />
+</android.support.design.widget.CoordinatorLayout>
